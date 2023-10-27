@@ -15,12 +15,13 @@ body {
 	background-position: 20% 20%;
 }
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
+@media screen and (orientation:landscape) {
 
+body {
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+  }
 }
 
 /* ------------------------------ INDEX PAGE - HEADER ------------------------------ */
